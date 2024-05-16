@@ -1,0 +1,36 @@
+#How Many Bottles did you Recycle in a Week?
+
+#Variables
+#Accumulator variable
+
+#initiate variable with 0
+totalBottle = 0
+days = 1
+
+#While Loop
+
+while days <= 7:
+    totalRecycled = int(input('How many bottles did you recycle on day ' + str(days) + ': '))
+
+    totalBottle = totalBottle + totalRecycled
+    days = days + 1
+
+#End While
+
+#if-else to calculate:
+    
+if totalBottle == 0:
+    print('You have not recycled any bottles this week.')
+
+elif totalBottle <= 7:
+    print('You have recycled',totalBottle,'bottles this week.')
+
+elif totalBottle >= 7 and totalBottle < 50:
+    print('Great job, you have recycled',totalBottle,'of bottles this week!')
+
+    
+elif totalBottle >= 50:
+    print('WOW! You are killing it this week with a total of',totalBottle,'bottles recycled!!')
+
+#End If-Else
+
